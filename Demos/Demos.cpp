@@ -23,10 +23,20 @@ int main()
 	//std::cout << b2.height << " " << b2.length << " " << b2.width << std::endl;
 	//std::cout << b3.height << " " << b3.length << " " << b3.width << std::endl;
 
-	Box* ptr = new Box();
+	/*Box* ptr = new Box();
 
 	(*ptr).height = 2;
-	ptr->height = 2;
+	ptr->height = 2;*/
+
+	int a = 5;       // Normal integer variable
+	int* ptr;
+	ptr = &a;   // Pointer ptr stores the address of a
+
+	std::cout << "Value of a: " << a << std::endl;
+	std::cout << "Address of a (&a): " << &a << std::endl;
+	std::cout << "Address stored in ptr: " << ptr << std::endl;
+	std::cout << "Value pointed to by ptr (*ptr): " << *ptr << std::endl;
+
 
 	return 0;
 }
