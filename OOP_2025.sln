@@ -18,6 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lec 5", "Lec 5", "{9B41DC6F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lec 6", "Lec 6", "{4E95E882-6D29-49CF-B476-3E058A6983E1}"
 	ProjectSection(SolutionItems) = preProject
+		notes.txt = notes.txt
 		README.md = README.md
 	EndProjectSection
 EndProject

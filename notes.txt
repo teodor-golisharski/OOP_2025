@@ -1,0 +1,58 @@
+﻿------------------------------------------------------------------------------------------------------
+									ПРЕДЕФИНИРАНЕ НА ОПЕРАТОРИ
+------------------------------------------------------------------------------------------------------
+* Аритметични (+, -, /, *, %) - извън класа
+	- (не налагат промяна върху лявата операнда)
+
+------------------------------------ ПРИМЕР ----------------------------------------------------------
+
+MyDouble operator+(const MyDouble& lhs, const MyDouble& rhs)
+{
+	MyDouble temp(lhs);        //create a local copy of lhs, calling the copy constructor of complex
+	temp+=rhs;                //call to the already defined compound operator +=
+	return temp;
+}  
+
+***** КОГА ДЕФИНИРАМЕ ЕДИН ОПЕРАТОР КАТО ЧЛЕН-ФУНКЦИЯ?
+
+ЧЛЕНОВЕ (ЗАДЪЛЖИТЕЛНО) - Присвояващия (=), индексния ([]), function call (()), member access (->)
+
+
+------------------------------------------------------------------------------------------------------
+Предефиниране на оператори за инкрементация и декрементация (++ и --)
+Префиксните връщат lvalue (обектът, от който са извикани)
+Постфиксните връщат rvalue (нов временен обект). В параметрите на предефинирания оператор се добавя dummy параметър, който не се ползва, но указва, че предефинираме постфиксен оператор
+class MyDouble
+{
+  int a;
+  int b;
+  
+public:
+
+    MyDouble(int a, int b) : a(a), b(b)
+    {}
+    
+    MyDouble& operator++() // prefix
+    {
+        a++; // update the state of the object
+        b++;
+        return *this;
+    }
+    
+    MyDouble operator++(int dummy) // postfix
+    {
+        MyDouble temp = *this; // copy the current state of the object
+        a++; // update the state of the object
+        b++;
+        return temp; // return a temp object
+    }
+};
+
+int main()
+{
+    MyDouble obj(3, 4);
+    MyDouble obj2 = obj++;
+    ++obj;
+    return 0;
+}
+
