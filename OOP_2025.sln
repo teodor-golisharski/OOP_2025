@@ -57,6 +57,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MusicPlaylist", "MusicPlayl
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StringImplementation", "StringImplementation\StringImplementation.vcxproj", "{3EC264B7-C57F-4A7A-8B33-83C844974E30}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lec 8", "Lec 8", "{F61F4E53-1A00-4D77-B650-B0E0E4DB476D}"
+	ProjectSection(SolutionItems) = preProject
+		THEORY_8.md = THEORY_8.md
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ex1", "ex1\ex1.vcxproj", "{8D2B6D18-AF54-434F-B2CF-3787C078E238}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -185,6 +192,14 @@ Global
 		{3EC264B7-C57F-4A7A-8B33-83C844974E30}.Release|x64.Build.0 = Release|x64
 		{3EC264B7-C57F-4A7A-8B33-83C844974E30}.Release|x86.ActiveCfg = Release|Win32
 		{3EC264B7-C57F-4A7A-8B33-83C844974E30}.Release|x86.Build.0 = Release|Win32
+		{8D2B6D18-AF54-434F-B2CF-3787C078E238}.Debug|x64.ActiveCfg = Debug|x64
+		{8D2B6D18-AF54-434F-B2CF-3787C078E238}.Debug|x64.Build.0 = Debug|x64
+		{8D2B6D18-AF54-434F-B2CF-3787C078E238}.Debug|x86.ActiveCfg = Debug|Win32
+		{8D2B6D18-AF54-434F-B2CF-3787C078E238}.Debug|x86.Build.0 = Debug|Win32
+		{8D2B6D18-AF54-434F-B2CF-3787C078E238}.Release|x64.ActiveCfg = Release|x64
+		{8D2B6D18-AF54-434F-B2CF-3787C078E238}.Release|x64.Build.0 = Release|x64
+		{8D2B6D18-AF54-434F-B2CF-3787C078E238}.Release|x86.ActiveCfg = Release|Win32
+		{8D2B6D18-AF54-434F-B2CF-3787C078E238}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -205,5 +220,6 @@ Global
 		{1240EE8D-EE67-463F-AB60-87381A81E776} = {BF1929EE-BA66-4228-9B15-6C123B5FD082}
 		{60CDFC2A-789C-48E6-9764-926533E3C8BE} = {BF1929EE-BA66-4228-9B15-6C123B5FD082}
 		{3EC264B7-C57F-4A7A-8B33-83C844974E30} = {BF1929EE-BA66-4228-9B15-6C123B5FD082}
+		{8D2B6D18-AF54-434F-B2CF-3787C078E238} = {F61F4E53-1A00-4D77-B650-B0E0E4DB476D}
 	EndGlobalSection
 EndGlobal
