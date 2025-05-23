@@ -7,6 +7,7 @@ Cow::Cow() : Animal(AnimalType::Cow)
 void Cow::roar() const
 {
 	std::cout << "Mоо mоо!" << std::endl;
+
 }
 
 Animal* Cow::clone() const
