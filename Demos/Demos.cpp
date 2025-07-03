@@ -8,8 +8,18 @@ struct Box
 	// double height, width, length; is also possible
 };
 
+class Base
+{
+};
+
+class Derived : public Base
+{
+};
+
 int main()
 {
+	
+
 	//Box b; // default values to height and width and length
 
 	//Box b2 = { 3, 4, 3.4 }; // height = 3, width = 3, length = 3.4;

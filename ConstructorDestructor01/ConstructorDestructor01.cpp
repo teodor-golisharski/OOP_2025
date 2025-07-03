@@ -44,14 +44,17 @@ struct C
 
 struct X
 {
-    A first;
-    B second;
-    C obejectsArray[3];
 
     X()
     { //calls Constructor(default) of A, Constructor(default) of B, Constructor(default) of C" (x3)
         std::cout << "Constructor of X" << std::endl;
     }
+
+    A first;
+    B second;
+    C obejectsArray[3];
+
+    
     ~X()
     {
         std::cout << "Destructor of X" << std::endl;
