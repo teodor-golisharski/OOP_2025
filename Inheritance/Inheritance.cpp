@@ -40,7 +40,21 @@ public:
 	}
 };
 
-class D : private C
+class X
+{
+public:
+	X()
+	{
+		std::cout << "X()" << std::endl;
+	}
+	~X()
+	{
+		std::cout << "~X()" << std::endl;
+	}
+};
+
+
+class D : protected X, private C
 {
 public:
 
@@ -56,5 +70,5 @@ public:
 
 int main()
 {
-	D a;
+	C a;
 }
